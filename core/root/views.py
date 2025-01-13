@@ -6,7 +6,13 @@ from django.contrib.auth import login, logout
 from django.contrib.auth.views import LoginView
 from django.contrib import messages
 from .services.bot_send import send_msgs, send_msg
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
+from django.views.generic import TemplateView
 
+@method_decorator(login_required, name='dispatch')
+class IndexView(TemplateView):
+    template_name = 'root/login.html'
 
 class RegisterView(CreateView):
     form_class = UserRegisterForm 
