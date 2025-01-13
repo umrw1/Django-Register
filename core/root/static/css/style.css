@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 2rem;
+}
+
+.container .form {
+  padding: 0;
+}
+
+.form header {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #6e8efb;
+}
+
+.form div {
+  margin-bottom: 1.3rem;
+}
+
+.form input, .form textarea {
+  height: 50px;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.form input:focus, .form textarea:focus {
+  box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+  border-color: #6e8efb;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+  color: #aaa;
+}
+
+.form input.button {
+  color: #fff;
+  background: #6e8efb;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form input.button:hover {
+  background: #5a78db;
+}
+
+.container a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6e8efb;
+  transition: color 0.3s ease;
+}
+
+.container a:hover {
+  color: #5a78db;
+}
+
+.container span.signup {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+button {
+  background: #6e8efb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #5a78db;
+}
